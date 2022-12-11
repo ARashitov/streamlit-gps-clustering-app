@@ -1,0 +1,9 @@
+.github
+.pytest_cache
+.vscode
+notebooks
+terraform
+.coverage
+.env
+.pre-commit-config
+.info.log
