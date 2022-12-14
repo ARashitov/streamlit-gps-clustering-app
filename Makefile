@@ -16,6 +16,7 @@ env_install_dependencies:
 
 env_install_jupyter_extensions:
 	jupyter contrib nbextension install --sys-prefix \
+	&& jupyter nbextension enable --py widgetsnbextension --sys-prefix \
 	&& jupyter nbextension install --user https://rawgithub.com/minrk/ipython_extensions/master/nbextensions/toc.js \
 	&& jupyter nbextension enable --py widgetsnbextension \
 	&& jupyter nbextension enable codefolding/main \
