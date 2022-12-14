@@ -34,3 +34,9 @@ run_jupyter:
 
 run_precommit:
 	pre-commit run --all-files
+
+run_build:
+	docker build -f Dockerfile -t gps_clustering_streamlit:latest .
+
+run_docker:
+	docker-compose -f docker-compose.yaml up -d
